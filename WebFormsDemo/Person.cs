@@ -7,25 +7,22 @@ namespace WebFormsDemo
 {
     public class Person
     {
-        public string SIN { get; set; }
+        public int StudentID { get; set; }
         public string Name { get; set; }
-        public int Age { get; set; }
-        public double Wage { get; set; }
+        public double Credits { get; set; }
         public string Phone { get; set; }
         public Person()
         {
          
         }
-        public Person(string sin,
+        public Person(int studentID,
                         string name,
-                        int age,
-                        double wage,
+                        double credits,                        
                         string phone)
         {
-            SIN = sin;
+            StudentID = studentID;
             Name = name;
-            Age = age;
-            Wage = wage;
+            Credits = credits;
             Phone = phone;
         }
     }
